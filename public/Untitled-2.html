@@ -1,0 +1,71 @@
+<div class="max-w-6xl mx-auto bg-white p-8 shadow-md rounded-lg">
+            <!-- Main Content Section -->
+            <div class="grid md:grid-cols-3 gap-8 mb-10">
+                <div class="col-span-2">
+                    <h2 class="text-3xl font-semibold mb-4">Virtual machine untuk workload apa pun</h2>
+                    <p class="text-gray-700 mb-4">      
+                        Buat dan jalankan VM online dengan mudah di infrastruktur cloud berperforma tinggi dan andal. Pilih jenis mesin kustom atau preset untuk server web, database, AI, dan lainnya.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Dapatkan satu instance VM e2-micro gratis per bulan. <strong>Pelanggan baru juga mendapatkan kredit gratis senilai $300</strong> untuk mencoba Compute Engine dan produk Google Cloud lainnya.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">
+                            Coba Compute Engine gratis
+                        </button>
+                        <button class="border border-blue-600 text-blue-600 py-2 px-4 rounded-md hover:bg-blue-100">
+                            Hubungi bagian penjualan
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-md shadow-sm">
+                    <h3 class="font-semibold mb-4">Highlight produk</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>✔️ Cara memilih dan men-deploy VM pertama Anda</li>
+                        <li>✔️ Mengenkripsi data sensitif dengan Confidential VMs</li>
+                        <li>✔️ Sesuaikan VM Anda untuk berbagai persyaratan komputasi, memori, performa, dan biaya</li>
+                    </ul>
+                    <button id="openModalBtn" class=" text-white  hover:bg-white">
+                        <img src="www.google.com">
+                        <h2 class=" font-semibold mb-4 text-black">Cara memilih VM yang tepat</h2>                
+                    </button>
+            
+               <!-- Modal -->
+<div id="myModal" class="fixed inset-0 hidden bg-gray-800 bg-opacity-75 flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg relative max-w-xl w-full">
+    
+        <button id="closeModalBtn" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">&times;</button>
+
+        
+        <iframe class="w-full h-64 rounded-lg mb-4" src="https://www.youtube.com/embed/lHZwlzOUOZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <!-- Description Text -->
+        <p class="text-gray-700">
+            Anda dapat menghentikan pencarian dan mulai membuat keputusan yang tepat untuk memilih VM yang benar dengan Compute Engine.
+        </p>
+    </div>
+</div>
+
+            
+                <script>
+                    const openModalBtn = document.getElementById('openModalBtn');
+                    const closeModalBtn = document.getElementById('closeModalBtn');
+                    const modal = document.getElementById('myModal');
+            
+                    openModalBtn.addEventListener('click', () => {
+                        modal.classList.remove('hidden');
+                    });
+            
+                    closeModalBtn.addEventListener('click', () => {
+                        modal.classList.add('hidden');
+                    });
+            
+                    window.addEventListener('click', (e) => {
+                        if (e.target === modal) {
+                            modal.classList.add('hidden');
+                        }
+                    });
+                </script>
+                </div>
+                
+            </div>
